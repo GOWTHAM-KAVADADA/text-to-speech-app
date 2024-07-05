@@ -5,7 +5,6 @@ import pyttsx3
 from gtts import gTTS
 import os
 
-
 class TextToSpeechApp:
     def __init__(self, root):
         self.root = root
@@ -86,7 +85,6 @@ class TextToSpeechApp:
         tts = gTTS(text=text, lang=lang)
         tts.save(filename)
         tk.messagebox.showinfo("Success", f"Audio saved as {filename}")
-
 
 if __name__ == "__main__":
     root = tk.Tk()
